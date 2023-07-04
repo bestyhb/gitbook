@@ -2,7 +2,7 @@
 urowid,rowid,bfile,nclob,clob,blob,interval day to second,interval year to month,timestamp with local time zone,timestamp with time zone,timestamp,date, long raw,long,binary_double,binary_float,number,raw,nvarchar2,varchar2,nchar,∏
 
 ## Character
-
+char, nchar
 ### Oracle的字符的汉字编码方式是什么？
 不同编码方式中汉字占用情况不同，UTF-8（1-3字节）、GB2312（2字节）、GBK（2字节）、GB8030（1、2、4字节）
 
@@ -35,7 +35,7 @@ Oracle中，定长字符串和变长字符串都用于存储字符串类型的�
 
 ## Number
 
-### 为什么说Oracle比Java的数字类型更精准？Number类型的具体精度为多少？
+### Oracle和Java的数字类型哪个更精准？
 Oracle中 Number和Java long,int,double类型都用于存放数字，
 Oracle Number精度为38位
 Java long 精度 20位
@@ -45,7 +45,7 @@ Java dobule 精度
 Java float 精度
 所以说Oracle Number类型比Java数字类型更精准。
 
-### Oracle定点数和浮点数的精度如何定义？
+### Oracle定点数和浮点数如何定义？
 NUMBER(m,n) m表示总长度 n表示小数位的精度。
 如果只输入定点数，则使用NUMBER(m)，m表示可以存入数据的最大位数。
 
