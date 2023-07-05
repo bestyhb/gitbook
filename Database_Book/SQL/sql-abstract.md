@@ -26,6 +26,39 @@
     定义
 ```
 
+```
+数据库
+    创建
+    create database databasename
+    删除
+数据表
+    创建
+    create table tablename
+    create table newtablename like oldtablename
+    create table newtablename as select * from oldtablename definition only
+    删除
+    修改
+    alter table tablename add column columntype
+    alter table tablename add primary primarykeyname (columnname)
+数据
+    插入
+    删除
+    修改
+    查询
+        条件查询
+        模糊查询
+视图
+    创建
+过程
+    创建存储过程
+用户
+    设置用户对数据库的使用权限
+函数
+    定义
+触发器
+    定义
+```
+
 # 方言
 | database     | dialect |
 | ------------ | ------- |
