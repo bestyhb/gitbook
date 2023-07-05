@@ -1,4 +1,10 @@
-### Language History (语言发展史)
+- [SQL History (语言发展史)](#sql-history-语言发展史)
+- [SQL Execute (语言执行过程)](#sql-execute-语言执行过程)
+- [SQL Class (语言类型)](#sql-class-语言类型)
+- [SQL Elements (语言元素)](#sql-elements-语言元素)
+
+
+### SQL History (语言发展史)
 1. 1970
 IBM的Edgar Frank "Ted" Codd博士描述了关系型数据库的模型，因此被称为“关系型数据库之父”。
 2. 1974
@@ -15,7 +21,7 @@ Oracle公司首先提出商用SQL，随后IBM公司也在DB2数据库实现了SQ
 ANSI发布SQL标准的重大更新版本，弥补旧版的不足，被称为ANSI SQL 89，该版本也被ISO采纳。
 > 尽管存在标准，但是大多数SQL代码在移植到不同的数据库系统之前至少需要进行一定的修改。
 
-### Language Execute (语言执行过程)
+### SQL Execute (语言执行过程)
 
 **传统查询引擎能够处理所有非SQL命令，但是SQL引擎并不能处理逻辑文件。**
 
@@ -29,7 +35,7 @@ SQL引擎翻译SQL语句 → 处理请求任务
 物理数据库
 ```
 
-### Language Class (语言类型)
+### SQL Class (语言类型)
 最初基于关系代数和元祖关系演算，SQL由许多类型语句的，可以被非正式地归类为子语言，常用：一个数据查询语言(DQL)，一个数据定义语言(DDL)，一个数据控制语言(DCL)，数据操纵语言(DML)
 SQL的范围包括数据查询和操作（插入、更新、删除 / 增删改查）、数据定义（模式创建和修改），数据访问控制。
 虽然SQL本质上是一个声明性语言，但它还包括过程元素。
@@ -47,4 +53,4 @@ KEYWORD: SELECT
 KEYWORD: COMMIT ROLLBACK
 **DCL: Data Control Language**
 
-### Language Elements (语言元素)
+### SQL Elements (语言元素)

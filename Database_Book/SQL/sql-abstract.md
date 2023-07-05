@@ -29,17 +29,20 @@
 ```
 数据库
     创建
-    create database databasename
+    CREATE DATABASE [databasename]
     删除
+    DROP DATABASE [databasename]
 数据表
     创建
-    create table tablename
-    create table newtablename like oldtablename
-    create table newtablename as select * from oldtablename definition only
+    CREATE TABLE [tablename]
+    CREATE TABLE [newtablename] LIKE [oldtablename]
+    CREATE TABLE [TABLE_NAME] AD SELECT * FROM [oldtablename] DEFINITION ONLY
+    CREATE [UNIQUE] INDEX [INDEX_NAME] ON [TAbLE_NAME] ([COLUMN_NAME])
     删除
+    DROP TABLE [table_name]
     修改
-    alter table tablename add column columntype
-    alter table tablename add primary primarykeyname (columnname)
+    ALTER TABLE [TABLE_NAME] ADD COLUMN [COLUMN_TYPE]
+    ALTER TAbLE [TABLE_NAME] ADD PRIMARY [PRIMARY_KEY] ([COLUMN]])
 数据
     插入
     删除
@@ -49,6 +52,9 @@
         模糊查询
 视图
     创建
+    CREATE VIEW [VIEW_NAME] AS SELECT STATEMENT
+    删除
+    DROP 
 过程
     创建存储过程
 用户
