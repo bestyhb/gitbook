@@ -20,7 +20,7 @@ Oracle中，定长字符串和变长字符串都用于存储字符串类型的�
 
 ### 当输入的数据长度大于或小于字符串定义长度时的表现是什么？
 
-### 为什么说CHAR比VARCHAR效率高？
+### CHAR、VARCHAR的优缺点？
 
 ### Oracle中的变长字符串类型为何不是VARCHAR1？VARCHAR和VARCAHR2的区别是什么？
 **类型性质：**varchar1（实际为varchar）为标准SQL里定义的数据类型，varchar2是Oracle独有的一种数据类型。
