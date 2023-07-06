@@ -41,4 +41,7 @@ shrink，段重组
 ## Academic Terms (学术术语)
 
 ### HWM
-HWM, high water mark，高水标记，简单来说，HWM就是一个segment中已使用和未使用block的分界线，这个概念在segment的存储内容中是比较重要的。
+HWM, high water mark，高水标记。  
+*简单来说，HWM就是一个**segment中已使用和未使用block的分界线**，这个概念在segment的存储内容中是比较重要的。*  
+**降低HWM的方法**  
+移动表、收缩表、导入导出表、在线重定义表
