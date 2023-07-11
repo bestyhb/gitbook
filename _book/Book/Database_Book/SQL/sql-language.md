@@ -1,5 +1,7 @@
+- [SQL History (语言发展史)](#sql-history-语言发展史)
+- [SQL Execute (语言执行过程)](#sql-execute-语言执行过程)
 - [SQL Class (语言类型)](#sql-class-语言类型)
-  - [SQL Elements (语言元素)](#sql-elements-语言元素)
+- [SQL Elements (语言元素)](#sql-elements-语言元素)
 
 
 ### SQL History (语言发展史)
@@ -33,7 +35,7 @@ SQL引擎翻译SQL语句 → 处理请求任务
 物理数据库
 ```
 
-## SQL Class (语言类型)
+### SQL Class (语言类型)
 最初基于关系代数和元祖关系演算，SQL由许多类型语句的，可以被非正式地归类为子语言，常用：一个数据查询语言(DQL)，一个数据定义语言(DDL)，一个数据控制语言(DCL)，数据操纵语言(DML)
 SQL的范围包括数据查询和操作（插入、更新、删除 / 增删改查）、数据定义（模式创建和修改），数据访问控制。
 虽然SQL本质上是一个声明性语言，但它还包括过程元素。

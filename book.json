@@ -1,13 +1,16 @@
 {
     "plugins": [
         "hide-element",
+        "include-codeblock",
         "copy-code-button",
         "anchor-navigation-ex",
         "advanced-emoji",
-        "emphasize",
-        "include-codeblock"
+        "emphasize"
     ],
     "pluginsConfig":{
+        "theme-default":{
+            "showLevel": true
+        },
         "hide-element":{
             "elements":[".gitbook-link"]
         },
