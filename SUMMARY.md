@@ -1,17 +1,17 @@
 ### [README](README.md)
 
-### IDEA
-  # [Custom VM option](custom_vm_options.md)
+### JVM
 
-### Linux
 
-### Oracle
+#### Linux
+
+#### Oracle
   ### SQL
   * [DDL单表结构](OracleBook/Oracle-SQL-%E6%9F%A5%E8%AF%A2%E8%A1%A8%E7%BB%93%E6%9E%84.md)
   * [类型](OracleBook/oracle-type.md)
   * [information](/Database_Book/academic_professional_term.md)
 
-### MySQL
+#### MySQL
   * [简单注入测试]
 
 ### Maven
