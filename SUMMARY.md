@@ -1,5 +1,8 @@
 ### [README](README.md)
 
+### IDEA
+  # [Custom VM option](custom_vm_options.md)
+
 ### Linux
 
 ### Oracle
