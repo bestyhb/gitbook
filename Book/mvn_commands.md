@@ -17,5 +17,5 @@
 ```bash
 mvn install -DskipTests
 mvn package -Dmaven.test.failure.ignore=true
-mvn install:install-file -DgroupId=org.mybatis.generator -DartifactId=mybatis-generator-core -Dversion-1.3.6 -Dpackaging=jar -Dfile=/Users/spring/Downloads/mybatis-generator-core-1.3.6.jar
+mvn install:install-file -DgroupId=org.mybatis.generator -DartifactId=mybatis-generator-core -Dversion=1.3.6 -Dpackaging=jar -Dfile=/Users/spring/Downloads/mybatis-generator-core-1.3.6.jar
 ```
