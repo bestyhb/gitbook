@@ -31,3 +31,4 @@
   * [generator](/MyBatisBook/mybatis_generator.md)
 
 ### Linux 运维
+  * [制作CentOS离线源](/linux/offline_epel.md)
