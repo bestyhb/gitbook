@@ -5,8 +5,8 @@
 du - estimate file space usage
 
 ## SYNOPSIS
-du [OPTION]... [FILE]...
-du [OPTION]... --files0-from=F
+`du [OPTION]... [FILE]...`  
+`du [OPTION]... --files0-from=F`  
 
 ## DESCRIPTION
 Summarize disk usage of each FILE, recursively for directories.
