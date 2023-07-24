@@ -30,7 +30,8 @@
 ### MyBatis
   * [generator](/MyBatisBook/mybatis_generator.md)
 
-### Linux 运维
+### Linux
   * [制作CentOS离线源](Book/linux%20%7C%20offline_epel.md)
   * [df](Book/linux_gnu_df.md)
+  * [du](Book/linux_gnu_du.md)
   * [history处理](Book/command_history.md)
