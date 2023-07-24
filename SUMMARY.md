@@ -31,4 +31,7 @@
   * [generator](/MyBatisBook/mybatis_generator.md)
 
 ### Linux 运维
-  * [制作CentOS离线源](/linux/offline_epel.md)
+  * [RPM]
+    * [制作CentOS离线源](Book/linux%20%7C%20offline_epel.md)
+  * [Disk]
+    * [du df](Book/linux%20%7C%20disk.md)
