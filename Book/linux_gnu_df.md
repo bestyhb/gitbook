@@ -1,5 +1,5 @@
 
-# DF User Commands                           
+# User Commands Manual Page DF(1)
 
 ## NAME
 df - report file system disk space usage
@@ -17,67 +17,71 @@ Show information about the file system on which each FILE resides, or all file s
 
 Mandatory arguments to long options are mandatory for short options too.
     
-    -a, --all
-    include pseudo, duplicate, inaccessible file systems
+`-a, --all`  
+include pseudo, duplicate, inaccessible file systems
 
-    -B, --block-size=SIZE
-    scale sizes by SIZE before printing them; e.g., '-BM' prints sizes in units of 1,048,576 bytes; see SIZE format below
+`-B`, `--block-size=SIZE`  
+scale sizes by SIZE before printing them; e.g., '`-BM`' prints sizes in units of 1,048,576 bytes; see SIZE format below
 
-    --direct
-    show statistics for a file instead of mount point
+`--direct`  
+show statistics for a file instead of mount point
 
-    --total
-    produce a grand total
+**`--total`**  
+produce a grand total
 
-    -h, --human-readable
-    print sizes in human readable format (e.g., 1K 234M 2G)
+**`-h`**, `--human-readable`  
+print sizes in human readable format (e.g., 1K 234M 2G)
 
-    -H, --si
-    likewise, but use powers of 1000 not 1024
-    
-    -i, --inodes
-    list inode information instead of block usage
+`-H`, `--si`  
+likewise, but use powers of 1000 not 1024
 
-    -k like --block-size=1K
+`-i`, `--inodes`  
+list inode information instead of block usage
 
-    -l, --local
-    limit listing to local file systems
+`-k`  
+like `--block-size=1K`
 
-    --no-sync
-    do not invoke sync before getting usage info (default)
+`-l`, `--local`  
+limit listing to local file systems
 
-    --output[=FIELD_LIST]
-    use the output format defined by FIELD_LIST, or print all fields if FIELD_LIST is omitted.
+`--no-sync`  
+do not invoke sync before getting usage info (default)
 
-    -P, --portability
-    use the POSIX output format
+`--output[=FIELD_LIST]`  
+use the output format defined by FIELD_LIST, or print all fields if FIELD_LIST is omitted.
 
-    --sync invoke sync before getting usage info
+`-P`, `--portability`  
+use the POSIX output format
 
-    -t, --type=TYPE
-    limit listing to file systems of type TYPE
+`--sync`  
+invoke sync before getting usage info
 
-    -T, --print-type
-    print file system type
+`-t`, `--type=TYPE`  
+limit listing to file systems of type TYPE
 
-    -x, --exclude-type=TYPE
-    limit listing to file systems not of type TYPE
+`-T`, `--print-type`  
+print file system type
 
-    -v (ignored)
+`-x`, `--exclude-type=TYPE`  
+limit listing to file systems not of type TYPE
 
-    --help display this help and exit
+`-v`  
+(ignored)
 
-    --version
-    output version information and exit
+`--help`  
+display this help and exit
 
-    Display values are in units of the first available SIZE from --block-size, and the DF_BLOCK_SIZE, BLOCK_SIZE and BLOCKSIZE environment variables. Otherwise, units default to 1024 bytes (or 512 if POSIXLY_CORRECT is set).
+`--version`  
+output version information and exit
 
-    SIZE is an integer and optional unit (example: 10M is 10*1024*1024). Units are K, M, G, T, P, E, Z, Y (powers of 1024) or KB, MB, ... (powers of 1000).
+Display values are in units of the first available SIZE from `--block-size`, and the DF_BLOCK_SIZE, BLOCK_SIZE and BLOCKSIZE environment variables. Otherwise, units default to 1024 bytes (or 512 if POSIXLY_CORRECT is set).
 
-    FIELD_LIST is a comma-separated list of columns to be included. Valid field names are: 'source', 'fstype', 'itotal', 'iused', 'iavail', 'ipcent', 'size', 'used', 'avail', 'pcent', 'file' and 'target' (see info page).
+SIZE is an integer and optional unit (example: 10M is 10\*1024\*1024). Units are K, M, G, T, P, E, Z, Y (powers of 1024) or KB, MB, ... (powers of 1000).
 
-    GNU coreutils online help: <http://www.gnu.org/software/coreutils/>
-    Report df translation bugs to <http://translationproject.org/team/>
+FIELD_LIST is a comma-separated list of columns to be included. Valid field names are: 'source', 'fstype', 'itotal', 'iused', 'iavail', 'ipcent', 'size', 'used', 'avail', 'pcent', 'file' and 'target' (see info page).
+
+> GNU coreutils online help: <http://www.gnu.org/software/coreutils/>  
+> Report df translation bugs to <http://translationproject.org/team/>  
 
 ## AUTHOR
 Written by Torbjorn Granlund, David MacKenzie, and Paul Eggert.
@@ -91,6 +95,3 @@ The full documentation for df is maintained as a Texinfo manual. If the info and
         info coreutils 'df invocation'
 
 should give you access to the complete manual.
-
-> Manual page df(1) line 52/125 80% (press h for help or q to quit)  
-> Manual page df(1) line 1 (press h for help or q to quit)  

@@ -32,5 +32,5 @@
 
 ### Linux 运维
   * [制作CentOS离线源](Book/linux%20%7C%20offline_epel.md)
-  * [du df](Book/linux%20%7C%20disk.md)
+  * [df](Book/linux_gnu_df.md)
   * [history处理](Book/command_history.md)
