@@ -88,7 +88,7 @@ Copyright © 2013 Free Software Foundation, Inc. License GPLv3+: GNU GPL version
 ## SEE ALSO
 The full documentation for df is maintained as a Texinfo manual. If the info and df programs are properly installed at your site, the command
 
-        `info coreutils 'df invocation'`
+        info coreutils 'df invocation'
 
 should give you access to the complete manual.
 
