@@ -34,11 +34,11 @@ Mandatory arguments to long options are mandatory for short options too.
 
     -H, --si
     likewise, but use powers of 1000 not 1024
-        
+    
     -i, --inodes
     list inode information instead of block usage
 
-    -k     like --block-size=1K
+    -k like --block-size=1K
 
     -l, --local
     limit listing to local file systems
@@ -63,7 +63,7 @@ Mandatory arguments to long options are mandatory for short options too.
     -x, --exclude-type=TYPE
     limit listing to file systems not of type TYPE
 
-    -v     (ignored)
+    -v (ignored)
 
     --help display this help and exit
 
