@@ -1,4 +1,4 @@
-``` Bash
+
 # User Commands DU(1)
 
 ## NAME
@@ -121,8 +121,6 @@ The full documentation for du is maintained as a Texinfo manual. If the info and
 
 should give you access to the complete manual.
 
-Manual page du(1) line 101/152 99% (press h for help or q to quit)
-Manual page du(1) line 52 (press h for help or q to quit)
-
-Manual page du(1) line 1 (press h for help or q to quit)
-```
+> Manual page du(1) line 101/152 99% (press h for help or q to quit)  
+> Manual page du(1) line 52 (press h for help or q to quit)  
+> Manual page du(1) line 1 (press h for help or q to quit)  

@@ -92,6 +92,5 @@ The full documentation for df is maintained as a Texinfo manual. If the info and
 
 should give you access to the complete manual.
 
-Manual page df(1) line 52/125 80% (press h for help or q to quit)
-Manual page df(1) line 1 (press h for help or q to quit)
-
+> Manual page df(1) line 52/125 80% (press h for help or q to quit)  
+> Manual page df(1) line 1 (press h for help or q to quit)  
