@@ -1,21 +1,22 @@
-```Bash
-DF(1)                           User Commands                           
 
-NAME
+# DF User Commands                           
+
+## NAME
 df - report file system disk space usage
 
-SYNOPSIS
-df [OPTION]... [FILE]...
+## SYNOPSIS
+`df [OPTION]... [FILE]...`
 
-DESCRIPTION
+## DESCRIPTION
 This manual page documents the GNU version of df. df displays the amount of disk space available on the file system containing each file name argument. If no file name is given, the space available on all currently mounted file systems is shown. Disk space is shown in 1K blocks by default, unless the environment variable POSIXLY_CORRECT is set, in which case 512-byte blocks are used.
 
 If an argument is the absolute file name of a disk device node containing a mounted file system, df shows the space available on that file system rather than on the file system containing the device node.This version of df cannot show the space available on unmounted file systems, because on most kinds of systems doing so requires very nonportable intimate knowledge of file system structures.
 
-OPTIONS
+## OPTIONS
 Show information about the file system on which each FILE resides, or all file systems by default.
 
 Mandatory arguments to long options are mandatory for short options too.
+    
     -a, --all
     include pseudo, duplicate, inaccessible file systems
 
@@ -78,19 +79,19 @@ Mandatory arguments to long options are mandatory for short options too.
     GNU coreutils online help: <http://www.gnu.org/software/coreutils/>
     Report df translation bugs to <http://translationproject.org/team/>
 
-AUTHOR
-    Written by Torbjorn Granlund, David MacKenzie, and Paul Eggert.
+## AUTHOR
+Written by Torbjorn Granlund, David MacKenzie, and Paul Eggert.
 
-COPYRIGHT
-    Copyright © 2013 Free Software Foundation, Inc. License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>. This is free software: you are free to change and redistribute it. There is NO WARRANTY, to the extent permitted by law.
+## COPYRIGHT
+Copyright © 2013 Free Software Foundation, Inc. License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>. This is free software: you are free to change and redistribute it. There is NO WARRANTY, to the extent permitted by law.
 
-SEE ALSO
-    The full documentation for df is maintained as a Texinfo manual. If the info and df programs are properly installed at your site, the command
+## SEE ALSO
+The full documentation for df is maintained as a Texinfo manual. If the info and df programs are properly installed at your site, the command
 
         `info coreutils 'df invocation'`
 
-    should give you access to the complete manual.
+should give you access to the complete manual.
+
 Manual page df(1) line 52/125 80% (press h for help or q to quit)
 Manual page df(1) line 1 (press h for help or q to quit)
 
-```
