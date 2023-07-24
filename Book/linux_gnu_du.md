@@ -1,5 +1,5 @@
 
-# User Commands DU(1)
+# User Commands DU(1) Manual Page
 
 ## NAME
 du - estimate file space usage

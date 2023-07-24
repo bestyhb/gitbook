@@ -1,5 +1,5 @@
 
-# User Commands Manual Page DF(1)
+# User Commands DF(1) Manual Page
 
 ## NAME
 df - report file system disk space usage
