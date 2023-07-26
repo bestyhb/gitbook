@@ -43,7 +43,7 @@ summarize disk usage of the NUL-terminated file names specified in file F; if F 
 `-H`  
 equivalent to `--dereference-args` (`-D`)
 
-`-h`, `--human-readable`  
+**`-h`**, **`--human-readable`**  
 print sizes in human readable format (e.g., 1K 234M 2G)
 
 `--inodes`  
