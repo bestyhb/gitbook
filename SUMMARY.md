@@ -32,7 +32,7 @@
 
 ### Concurrency
   * [队列](java_concurrent_queque.md)
-  * [线程池](java_concurrent_thread_pool.md)
+  * [线程池](java_concurrent_threadpool.md)
 
 ### Linux
   * [制作CentOS离线源](Book/linux%20%7C%20offline_epel.md)
