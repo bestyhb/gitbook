@@ -30,9 +30,9 @@
   * MyBatis
     * [generator](/MyBatisBook/mybatis_generator.md)
 
-  * [Java Concurrency (并发)](book/java_concurrency.md)
-    * [队列](book/java_concurrency_queue.md)
-    * [线程池](book/java_concurrency_threadpool.md)
+  * [Java Concurrency](book/java_concurrency.md)
+    * [Queue](book/java_concurrency_queue.md)
+    * [Threadpool](book/java_concurrency_threadpool.md)
       * [java.concurrent.ThreadPoolExecutor](book/java_concurrency_concurrent_ThreadPoolExecutor.md)
 
 <!-- ### Linux
