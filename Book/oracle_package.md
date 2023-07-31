@@ -14,12 +14,14 @@ FROM dual;
 ``` SQL
 -- 定义package包头；
 CREATE OR REPLACE PACKAGE scott.pkg_public_toolkit IS 
-PROCEDURE p_whether_table_existis(i_table_name IN sys.all_tab_comments.table_name%TYPE, o_flag OUT VARCHAR2, o_message OUT VARCHAR2);
+PROCEDURE p_whether_table_exists(i_table_name IN sys.all_tab_comments.table_name%TYPE, o_flag OUT VARCHAR2, o_message OUT VARCHAR2);
 FUNCTION f_whether_table_exists(i_table_name IN sys.all_tab_comments.table_name%TYPE) RETURN VARCHAR2;
 END pkg_public_toolkit;
 -- 授权给用户；
 GRANT EXECUTE ON scott.pkg_public_toolkit TO user;
 ```
+
+### 定义包体
 ``` SQL
 CREATE OR REPLACE PACKAGE BODY scott.pkg_public_toolkit IS
 PROCEDURE p_whether_table_exists(i_table_name IN sys.all_tab_comments.table_name%TYPE, o_flag OUT VARCHAR2, o_message OUT VARCHAR2) IS v_count NUMBER(1);
@@ -43,6 +45,16 @@ BEGIN
 p_whether_table_exists(i_table_name => i_table_name,o_flag=>o_flag,o_message=>o_message); RETURN o_message;
 END f_whether_table_exists;
 END pkg_public_toolkit;
+```
+
+### 删除包
+``` SQL
+-- 删除包
+DROP PACKAGE [BODY] [user.]package_name;
+-- 删除过程
+DROP PRODUCT p_whether_table_exists, OpenCurType;
+-- 删除实例中创建的包
+DROP PACKAGE demo_pack;
 ```
 
 ### 授权用户包权限
