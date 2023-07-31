@@ -36,7 +36,13 @@ EXCEPTION WHEN OTHERS THEN o_flag:='F';
 dbms_output.put_line(dbms_utility.format_error_backtrace); -- 报错行号
 dbms_output.put_line(SQLCODE || ':' || SQLERRM);           -- 报错编号及内容
 END p_whether_table_exists;
-
+FUNCTION f_whether_table_exists(i_table_name IN sys.all_tab_comments.table_name%TYPE) RETURN VARCHAR2 IS 
+o_flag VARCHAR2(2);
+o_message VARCHAR2(100);
+BEGIN 
+p_whether_table_exists(i_table_name => i_table_name,o_flag=>o_flag,o_message=>o_message); RETURN o_message;
+END f_whether_table_exists;
+END pkg_public_toolkit;
 ```
 
 ### 授权用户包权限
