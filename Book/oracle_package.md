@@ -2,7 +2,7 @@
 * package (包)
 Oracle中`package`是由`package`(包头)和`package body`(包体)组成的；
 
-### 如何调用存储过程或方法
+### 调用存储过程或方法
 ```SQL
 -- 当前用户调用scott用户中的package，判断某表是否存在与scott中；
 SELECT soctt.pag_public_toolkit.f_whether_table_exists('emp') a,
@@ -10,7 +10,7 @@ SELECT soctt.pag_public_toolkit.f_whether_table_exists('emp') a,
 FROM dual;
 ```
 
-### 如何定义包头
+### 定义包头
 ``` SQL
 -- 定义package包头；
 CREATE OR REPLACE PACKAGE scott.pkg_public_toolkit IS 
@@ -20,13 +20,17 @@ END pkg_public_toolkit;
 -- 授权给用户；
 GRANT EXECUTE ON scott.pkg_public_toolkit TO user;
 ```
+``` SQL
+CREATE OR REPLACE PACKAGE BODY scott.pkg_public_toolkit IS
+PROCEDURE p_whether_table_exists(i_table_name IN sys.all_tab_comments.table_name%TYPE)
+```
 
-### 怎样给用户定义授权或回收权限对应的包
+### 授权用户包权限
 ``` SQL
 GRANT EXECUTE ON db.pkg TO u1,u2;
 ```
 
-### 如何给用户定义或回收操作数据表的权限
+### 授权用户数据表的权限
 ``` SQL
 GRANT SELECT ON db.table TO user;       --package授权
 REVOKE SELECT ON db.table FROM user;    --package收权
