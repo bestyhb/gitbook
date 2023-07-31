@@ -22,7 +22,21 @@ GRANT EXECUTE ON scott.pkg_public_toolkit TO user;
 ```
 ``` SQL
 CREATE OR REPLACE PACKAGE BODY scott.pkg_public_toolkit IS
-PROCEDURE p_whether_table_exists(i_table_name IN sys.all_tab_comments.table_name%TYPE)
+PROCEDURE p_whether_table_exists(i_table_name IN sys.all_tab_comments.table_name%TYPE, o_flag OUT VARCHAR2, o_message OUT VARCHAR2) IS v_count NUMBER(1);
+BEGIN
+-- 判断用户scott中是否存在表
+SELECT COUNT(1) INTO v_count FROM user_tab_comments ust WHERE ust.table=upper(i_table_name);
+-- 程序执行描述信息
+IF v_count>=1 THEN o_message:='存在';
+ELSE o_message:='不存在';
+END IF;
+-- 程序执行标识
+o_flag:='T';
+EXCEPTION WHEN OTHERS THEN o_flag:='F';
+dbms_output.put_line(dbms_utility.format_error_backtrace); -- 报错行号
+dbms_output.put_line(SQLCODE || ':' || SQLERRM);           -- 报错编号及内容
+END p_whether_table_exists;
+
 ```
 
 ### 授权用户包权限
