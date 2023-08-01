@@ -5,6 +5,7 @@
 - [Function (函数)](#function-函数)
 - [PL/SQL](#plsql)
   - [PL/SQL Syntax (语法)](#plsql-syntax-语法)
+  - [EXCEPTION HANDLING(异常处理)](#exception-handling异常处理)
   - [PL/SQL和SQL区别](#plsql和sql区别)
     - [如何查询指定表结构？](#如何查询指定表结构)
     - [如何查询指定schema下的表？](#如何查询指定schema下的表)
@@ -68,6 +69,33 @@ MOD(x,y)表示x/y的余数。
 
 ### PL/SQL Syntax (语法)
 1. Blocks (块)
+PL/SQL代码是以块的形式组织的，每个块由关键字BEGIN和END包围。
+块是PL/SQL代码的基本执行单元，可以包含声明、异常处理和执行部分。
+```SQL
+DECLARE -- 声明部分
+    -- 变量
+    -- 集合
+    -- 游标
+    -- 类型
+    -- 常量
+BEGIN -- 执行部分
+    -- SQL语句
+    -- PL/SQL语句
+EXCEPTION -- 异常部分
+END;
+```
+### EXCEPTION HANDLING(异常处理)
+```SQL
+BEGIN
+    -- 执行部分抛出异常
+EXCEPTION
+    WHEN EXCEPTION1 THEN
+    WHEN EXCEPTION2 THEN
+        -- 处理异常2
+    WHEN EXCEPTION3 THEN
+        -- 其他未处理异常的处理
+END;
+```
 
 ### PL/SQL和SQL区别
 <!-- ![](images/2023-08-01-13-28-43.png) -->
