@@ -3,9 +3,11 @@
   - [Cursor生命周期](#cursor生命周期)
   - [Cursor使用](#cursor使用)
 - [Function (函数)](#function-函数)
-- [SQL](#sql)
-  - [如何查询指定表结构？](#如何查询指定表结构)
-  - [如何查询指定schema下的表？](#如何查询指定schema下的表)
+- [PL/SQL](#plsql)
+  - [PL/SQL Syntax (语法)](#plsql-syntax-语法)
+  - [PL/SQL和SQL区别](#plsql和sql区别)
+    - [如何查询指定表结构？](#如何查询指定表结构)
+    - [如何查询指定schema下的表？](#如何查询指定schema下的表)
 - [Type](#type)
   - [Character](#character)
     - [Oracle的字符的汉字编码方式是什么？](#oracle的字符的汉字编码方式是什么)
@@ -57,9 +59,21 @@ MOD(x,y)表示x/y的余数。
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## SQL
+## PL/SQL
+**Procedural Language / Structured Query Language, aka PL/SQL.**
 
-### 如何查询指定表结构？
+1. PL/SQL是一种用于Oracle数据库的编程语言
+2. PL/SQL结合了SQL和过程话编程元素，也就是混合SQL声明和过程结构
+3. PL/SQL是过程化语言
+
+### PL/SQL Syntax (语法)
+1. Blocks (块)
+
+### PL/SQL和SQL区别
+![](images/2023-08-01-13-28-43.png)
+
+
+#### 如何查询指定表结构？
 ``` SQL
 select t.COLUMN_NAME,
     decode(s.DATA_TYPE,
@@ -78,7 +92,7 @@ select ALL_COL_COMMENTS.COLUMN_NAME, decode(ALL_TAB_COLUMNS.DATA_TYPE,'data','da
 WHERE ALL_COL_COMMENTS.Table_Name='TABLE_NAME' and ALL_TAB_COLUMNS.Table_Name='TABLE_NAME' and ALL_COL_COMMENTS.COLUMN_NAME=ALL_TAB_COLUMNS.COLUMN_NAME order by ALL_COL_COMMENTS.COLUMN_NAME;
 ```
 
-### 如何查询指定schema下的表？
+#### 如何查询指定schema下的表？
 `select table_name from sys.dba_tables where owner='SCHEMA'`
 `select table_name from all_tables where owner='SCHEMA'`
 
