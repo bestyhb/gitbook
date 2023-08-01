@@ -1,0 +1,4 @@
+`trunc()`
+`nvl()`
+`over()`
+`MOD()`
