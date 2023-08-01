@@ -31,8 +31,10 @@ WHERE ALL_COL_COMMENTS.Table_Name='TABLE_NAME' and ALL_TAB_COLUMNS.Table_Name='T
 `select table_name from sys.dba_tables where owner='SCHEMA'`
 `select table_name from all_tables where owner='SCHEMA'`
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ## Type
-### type
+
 urowid,rowid,bfile,nclob,clob,blob,interval day to second,interval year to month,timestamp with local time zone,timestamp with time zone,timestamp,date, long raw,long,binary_double,binary_float,number,raw,nvarchar2,varchar2,nchar,∏
 
 ### Character
@@ -173,7 +175,10 @@ begin
     -- pl/sql语句
 end
 ```
+
 ## Client
+
+### 安装Windows客户端
 1. Install Oracle Client (安装Oracle客户端)
 
 2. Install PLSQL Developer (安装PL/SQL环境)
