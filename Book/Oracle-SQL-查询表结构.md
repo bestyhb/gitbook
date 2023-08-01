@@ -1,4 +1,4 @@
-p# 如何查询指定表结构？
+# 如何查询指定表结构？
 ``` SQL
 select t.COLUMN_NAME,
     decode(s.DATA_TYPE,
