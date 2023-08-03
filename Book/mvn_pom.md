@@ -129,6 +129,12 @@
     <artifactId>ojdbc8</artifactId>
     <version>11.2.0</version>
 </dependency>
+<!-- https://mvnrepository.com/artifact/com.oracle.database.nls/orai18n -->
+<dependency>
+    <groupId>com.oracle.database.nls</groupId>
+    <artifactId>orai18n</artifactId>
+    <version>21.1.0.0</version>
+</dependency>
 <!-- Spring Boot JDBC -->
 <dependency>
     <groupId>org.springframework.boot</groupId>
