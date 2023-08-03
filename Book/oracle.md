@@ -53,6 +53,7 @@
 ## Function (函数)
 `trunc()`
 `nvl()`
+`NVL`是一个常用的SQL函数，用于处理空值(NULL)
 `over()`
 `MOD()`
 MOD(x,y)表示x/y的余数。
@@ -90,8 +91,9 @@ BEGIN
     -- 执行部分抛出异常
 EXCEPTION
     WHEN EXCEPTION1 THEN
+        -- 异常1处理
     WHEN EXCEPTION2 THEN
-        -- 处理异常2
+        -- 异常2处理
     WHEN EXCEPTION3 THEN
         -- 其他未处理异常的处理
 END;
