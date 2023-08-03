@@ -53,6 +53,23 @@
 
 ## Function (函数)
 `trunc()`
+`TRUNC`是Oracle数据库中是一个常用的日期函数，用于截取日期信息。
+`TRUNC(date_expression[, format])`将日期值以指定精度截取，例如“年”“月”“日”，将较高位的部分归零或删除。
+`date_expression`为截取的日期表达式对象，它可以是一个日期值、日期列、日期变量等。
+`format`为截取精度，非必需参数，默认将日期截取至“天”，即损失“时”“分”“秒”。
+```SQL
+SELECT TRUNC(SYSDATE) as truncated_date FROM dual;
+-- 输出结果：2023-08-03 00:00:00
+
+SELECT TRUNC(SYSDATE, 'YYYY') as truncated_year FROM dual;
+-- 输出结果：2023-01-01 00:00:00
+
+SELECT TRUNC(SYSDATE, 'MM') as truncated_month FROM dual;
+-- 输出结果：2023-08-01 00:00:00
+
+SELECT TRUNC(SYSDATE, 'DD') as truncated_day FROM dual;
+-- 输出结果：2023-08-03 00:00:00
+```
 `nvl()`
 `NVL(expression, replacement_value)`是一个常用的SQL函数，用于处理空值(NULL)，如果第一个参数为NULL，则返回第二个参数，否则返回第一个参数的值。
 `over()`
