@@ -53,7 +53,7 @@
 ## Function (函数)
 `trunc()`
 `nvl()`
-`NVL`是一个常用的SQL函数，用于处理空值(NULL)
+`NVL(expression, replacement_value)`是一个常用的SQL函数，用于处理空值(NULL)，如果第一个参数为NULL，则返回第二个参数，否则返回第一个参数的值。
 `over()`
 `MOD()`
 MOD(x,y)表示x/y的余数。
