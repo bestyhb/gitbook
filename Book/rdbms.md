@@ -6,4 +6,7 @@ MySQL：MySQL中没有直接的游标变量的概念，但可以通过调用存�
 DB2：DB2数据库中也有游标变量，但它们的使用可能与Oracle的实现有所不同。
 SQLite：SQLite是一种嵌入式数据库，不同于传统的客户/服务器数据库，因此查询和结果处理的方式也可能不同。
 
-Cursor Variable(游标变量)：Oracle数据库中的术语，用于引用查询结果集的变量。
+Cursor Variable (游标变量)：Oracle数据库中的术语，用于引用查询结果集的变量。
+REFCURSOR：在多个数据库系统中使用，包括Oracle、Postgres等，用于返回结果集。
+Table-Valued Parameters (表值参数) ：SQL Server中的术语，允许表结构作为参数传递给存储过程或函数。
+Cursor(游标)：在DB2等数据库系统中的术语，永固处理和管理查询结果集。
