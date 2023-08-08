@@ -2,6 +2,8 @@
   - [Cursor解释](#cursor解释)
   - [Cursor生命周期](#cursor生命周期)
   - [Cursor使用](#cursor使用)
+  - [Cursor Variable (游标变量)](#cursor-variable-游标变量)
+- [CV, Cursor Variable, 游标变量是一个Oracle](#cv-cursor-variable-游标变量是一个oracle)
 - [Function (函数)](#function-函数)
 - [PL/SQL](#plsql)
   - [PL/SQL Syntax (语法)](#plsql-syntax-语法)
@@ -49,6 +51,12 @@
 3. 提取。提取数据，提取数据时，会提取指针指向的数据，此时指针会指向下一条数据，当提取最后一条数据时，指针指向不存在任何数据的位置，当再次提取数据时found值会变为false，notfound值会变为true。
 4. 关闭。关闭游标，释放内存资源。
 ### Cursor使用
+### Cursor Variable (游标变量)
+以下是一段代码标本。
+```SQL
+OPEN OUTDS FOR SELECT KSDM,KB,NVL(YC,0) YC,NVL(ZR,0) ZR,NVL(RY,0) RY,NVL(CY,0)CY,NVL(SW,0) SW,NVL(SWL*100,0.00) SWL,NVL(ZC,0) ZC,NVL(YM,0) YM,NVL(PJKFBC,0) PJKFBC,NVL(BCZZCS,0) BCZZCS,NVL(BCGZR,0) BCGZR,NVL(BCSYL*100,0.00) BCSYL,NVL(CYZPJZYR,0) CYZPJZYR,NVL(CYZZYZC,0) CYZZYZC,NVL(SJZYZC,0) SJZYZC,NVL(SJKFZCR,0) SJKFZCR FROM TT_EDCW_REPORT;
+```
+CV, Cursor Variable, 游标变量是一个Oracle
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Function (函数)
