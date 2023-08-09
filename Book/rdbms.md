@@ -1,12 +1,18 @@
 ## RSRM (结果集返回机制)
-CV, Cursor Variable, 游标变量
-SQL Server：SQL Server中类似游标变量的功能称为“表值参数”(Table-Valued Parameters)，其允许将一个表结构作为参数传递给存储过程或函数。
-PostgresSQL：PostgresSQL中使用REFCURSOR来返回结果集，其类似于Oracle中的CV。
-MySQL：MySQL中没有直接的游标变量的概念，但可以通过调用存储过程和变量来实现类似的功能。
-DB2：DB2数据库中也有游标变量，但它们的使用可能与Oracle的实现有所不同。
-SQLite：SQLite是一种嵌入式数据库，不同于传统的客户/服务器数据库，因此查询和结果处理的方式也可能不同。
+**RSRM，Result Set Retrun Method，即结果集返回机制。**
+结果集返回机制通常在数据库编程中用于执行查询并将查询结果返回给调用方。这种机制对于处理大量数据或需要进行多次数据访问的情况非常有用。以下是一些常见情况下会使用RSRM：
 
-Cursor Variable (游标变量)：Oracle数据库中的术语，用于引用查询结果集的变量。
-REFCURSOR：在多个数据库系统中使用，包括Oracle、Postgres等，用于返回结果集。
-Table-Valued Parameters (表值参数) ：SQL Server中的术语，允许表结构作为参数传递给存储过程或函数。
-Cursor(游标)：在DB2等数据库系统中的术语，永固处理和管理查询结果集。
+> 每个数据库系统的功能和术语都可能因其架构、设计和发展而异，在使用特定数据库系统时，最好查询相关文档以了解该数据库中是否存在类似的功能和术语，并了解如何使用它们。
+
+**SQL Server**：SQL Server中类似游标变量的功能称为“表值参数”(Table-Valued Parameters)，其允许将一个表结构作为参数传递给存储过程或函数。  
+**PostgresSQL**：PostgresSQL中使用REFCURSOR来返回结果集，其类似于Oracle中的CV(Cursor Variable)。  
+**MySQL**：MySQL中没有直接的游标变量的概念，但可以通过调用存储过程和变量来实现类似的功能。  
+**DB2**：DB2数据库中也有游标变量，但它们的使用可能与Oracle的实现有所不同。  
+**SQLite**：SQLite是一种嵌入式数据库，不同于传统的客户/服务器数据库，因此查询和结果处理的方式也可能不同。
+
+**Cursor Variable (游标变量)**：Oracle数据库中的术语，用于引用查询结果集的变量。  
+**Cursor(游标)**：在Oracle、DB2等数据库系统中的术语，永固处理和管理查询结果集。
+**REFCURSOR**：在多个数据库系统中使用，包括Oracle、Postgres等，用于返回结果集。  
+**Table-Valued Parameters (表值参数)**：SQL Server中的术语，允许表结构作为参数传递给存储过程或函数。  
+
+> 虽然不同的数据库系统可能使用不同的术语，但它们都涉及从数据库代码中返回查询结果集，以供用用程序进一步处理。在跨数据库开发时，理解这些术语的相似性和差异性将非常有帮助。
