@@ -1,10 +1,13 @@
 ## 爬虫
+
 * **如何最快速地从HTTP-URL中获取输入流并能够解析HTML源码？（代码题）**  
 从输入流中逐行读取`new BufferReader(new InpuptStreamReader(new URL(new String(urlPath)).openConnection().getInputStream())).readLine()`。
+
 * **如何解决爬虫403问题？（经验题）**  
 爬虫403的异常通常为"java.io.IOException:Server returned HTTP response code: 403 for URL"。通常情况下这种问题分为以下两种：  
 如果是服务端需要访问权限，那么需要提供授权信息。例如在URL中添加用户名或密码，或者使用OAuth2等认证方式。  
 如果是服务端禁止抓去，因为有些网站会根据请求的User-Agent头部判断请求是否来自合法浏览器，那么可以通过设置User-Agent。  
+
 * **java.net.URLConnection和java.net.HttpURLConnection有什么异同（）？**  
 从继承关系上来说：  
 `URLConnection`是一个抽象类，它是所有URL连接类型的基类，用于处理各种类型的URL连接而不局限于HTTP。  
@@ -19,6 +22,7 @@
 `URLConnection`默认的连接实现是根据URL协议的不同而调用不同的子类。  
 `HTTPURLConnection`默认情况下会自动执行**HTTP重定向**。  
 总体来说，如果单独处理HTTP连接，或者执行HTTP连接的相关操作，如设置请求头、处理响应状态等，使用`HTTPURLConnection`更合适，如果需要处理多种协议等连接，或者更加通用的连接操作，最好使用`URLConnection`。  
+
 * **什么是HTTP重定向？如何在爬虫中取消重定向？**  
 HTTP Redirect（HTTP重定向）是一种在客户端发起请求时，服务器返回特定响应状态码和新的URL，用于将客户端Redirect到另一个URL的机制。通常用于网站的流量转发、访问控制、错误处理以及网站内容的移动。  
 HTTP重定向可以用于多种情况，例如：  
@@ -31,5 +35,15 @@ HTTP重定向可以用于多种情况，例如：
 **307 (Temporary Redirect)**: 表示所请求的资源临时移动到新的URL，但是客户端应该保持原始请求的HTTP方法，即如果是POST请求，仍然要用POST请求新的URL。此状态码类似于302。  
 **308 (Permanent Redirect)**: 表示所请求资源永久移动到新的URL，但是客户端应该抱池原始请求的HTTP方法。  
 如果你需要关闭重定向，可以通过setInstanceFollowRedirects(false)。  
+
 * **获取HTTP输入的时候，使用HttpURLConnection和URLConnection打开的连接有什么不同？**  
 没有什么不同。当连接HTTP协议的URL时，虽然`URLConnection`和`HttpURLConnection`是不同的类，但是在底层机制上，当获取一个HTTP连接时，`URLConnection`会根据URL的协议选择适当的具体实现，所以对于HTTP协议来说，底层会使用`HttpURLConnection`这个酒体的实现。这种机制确保了在HTTP操作时能够使用专门为HTTP请求和响应设计的功能。  
+
+## Spring
+* 都有哪些方式，能够让函数方法在项目启动时运行？  
+注解：
+@Scheduled：设置项目启动的第n秒执行函数。
+@PostConstruct
+@PreDestory
+自定义注解：
+通过创建自定义注解并编写相应的处理器从而根据注解去触发函数执行。
