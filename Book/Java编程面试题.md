@@ -30,4 +30,6 @@ HTTP重定向可以用于多种情况，例如：
 **302 (Found)/303(See Other)**: 表示所请求的资源临时移动到新的URL，而303则是一种更严格的重定向方式，要求客户端使用GET请求新的URL。这两种状态码通常用于临时重定向。  
 **307 (Temporary Redirect)**: 表示所请求的资源临时移动到新的URL，但是客户端应该保持原始请求的HTTP方法，即如果是POST请求，仍然要用POST请求新的URL。此状态码类似于302。  
 **308 (Permanent Redirect)**: 表示所请求资源永久移动到新的URL，但是客户端应该抱池原始请求的HTTP方法。  
-如果你需要关闭重定向，可以通过setInstanceFollowRedirects(false)
+如果你需要关闭重定向，可以通过setInstanceFollowRedirects(false)。  
+* **获取HTTP输入的时候，使用HttpURLConnection和URLConnection打开的连接有什么不同？**  
+没有什么不同。当连接HTTP协议的URL时，虽然`URLConnection`和`HttpURLConnection`是不同的类，但是在底层机制上，当获取一个HTTP连接时，`URLConnection`会根据URL的协议选择适当的具体实现，所以对于HTTP协议来说，底层会使用`HttpURLConnection`这个酒体的实现。这种机制确保了在HTTP操作时能够使用专门为HTTP请求和响应设计的功能。  
