@@ -40,14 +40,18 @@ HTTP重定向可以用于多种情况，例如：
 没有什么不同。当连接HTTP协议的URL时，虽然`URLConnection`和`HttpURLConnection`是不同的类，但是在底层机制上，当获取一个HTTP连接时，`URLConnection`会根据URL的协议选择适当的具体实现，所以对于HTTP协议来说，底层会使用`HttpURLConnection`这个酒体的实现。这种机制确保了在HTTP操作时能够使用专门为HTTP请求和响应设计的功能。  
 
 ## 程序启动和类加载
-* 都有哪些方式，能够让函数方法在项目启动时运行？  
+* **Spring程序中都有哪些特有的方式，能够让函数方法在项目启动时运行？**  
 注解：
 @Scheduled：设置项目启动的第n秒执行函数。
 @PostConstruct
 @PreDestory
 @EventListener
+@SpringAOP
 自定义注解：
 通过创建自定义注解并编写相应的处理器从而根据注解去触发函数执行。
 
-* 请讲一讲需要在项目启动时运行某些逻辑使用@Bean或@EventListener的异同。
+* **传统Java项目中如何在项目启动加载时进行函数的执行？**
+
+
+* **请讲一讲需要在项目启动时运行某些逻辑使用@Bean或@EventListener的异同。**  
 在项目启动时实现运行逻辑使用@Bean和@EventListener是不同的，准确地说可以分为项目启动前、项目启动时和项目启动后。
