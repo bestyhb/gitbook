@@ -45,5 +45,6 @@ HTTP重定向可以用于多种情况，例如：
 @Scheduled：设置项目启动的第n秒执行函数。
 @PostConstruct
 @PreDestory
+@EventListener
 自定义注解：
 通过创建自定义注解并编写相应的处理器从而根据注解去触发函数执行。
