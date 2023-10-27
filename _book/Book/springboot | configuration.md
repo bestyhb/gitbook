@@ -5,7 +5,7 @@
 注解
 @Conditional
 
-## Profile (配置面)
+## SpringBoot Profile (项目配置)
 ### Profile Block (YAML文档块)
 ``` yaml
 server:
